@@ -6,11 +6,11 @@ function myFunction(){
 	var truePlanet;
 	var finalWeight;
 console.log(weightEarth);
-if (parseInt(weightEarth) >= 0){				//Check if inputs are true or not
-	trueWeight = true;
+if (isNaN(weightEarth)){				//Check if inputs are true or not
+	trueWeight = false;
 	}
 else {
-	trueWeight = false;
+	trueWeight = true;
 }
 if (parseFloat(planet) === 27.9 || 0.377 || 0.9032 || 1 || 0.1655 || 0.3895 || 2.640 || 1.139 || 0.917 || 1.148 || 0.06){
 	truePlanet = true;
@@ -18,7 +18,7 @@ if (parseFloat(planet) === 27.9 || 0.377 || 0.9032 || 1 || 0.1655 || 0.3895 || 2
 else {
 	truePlanet = false;
 	}
-if (trueWeight === true && truePlanet === true){		//Calculate and output the outcome of the inputs
+if (trueWeight === true && truePlanet === true){
 	var finalWeight = planet * weightEarth
 	document.getElementById("p1").innerHTML = ("Your new weight would be " + finalWeight);
 	}
