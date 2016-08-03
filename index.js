@@ -18,7 +18,7 @@ if (parseFloat(planet) === 27.9 || 0.377 || 0.9032 || 1 || 0.1655 || 0.3895 || 2
 else {
 	truePlanet = false;
 	}
-if (trueWeight === true && truePlanet === true){
+if (trueWeight === true && truePlanet === true){		//Calculate and output the outcome of the inputs
 	var finalWeight = planet * weightEarth
 	document.getElementById("p1").innerHTML = ("Your new weight would be " + finalWeight);
 	}
